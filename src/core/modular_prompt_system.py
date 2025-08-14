@@ -11,11 +11,11 @@ class PromptModule:
     priority: int = 0
 
 class ModularPromptSystem:
-    """Sistema modular de prompts para processamento granular"""
+    """Sistema modular de prompts otimizado para velocidade"""
     
     def __init__(self):
         self.logger = logging.getLogger(__name__)
-        self.delay_between_calls = 500  # 500ms entre chamadas
+        self.delay_between_calls = 50  # 50ms apenas - muito mais rápido
         
         # Registra todos os módulos de prompt
         self.modules = {
@@ -37,9 +37,13 @@ class ModularPromptSystem:
             "maneirismos_ia": self._get_ai_mannerisms_module(),
             "linguagem_didatica": self._get_didactic_language_module(),
             "tratamento_uniforme": self._get_uniform_treatment_module(),
+            "numeros_uniformes_padrao_internacional": self._get_uniform_treatment_module(),
             
             # **MÓDULO DE SEGMENTAÇÃO**
-            "segmentacao": self._get_segmentation_module()
+            "segmentacao": self._get_segmentation_module(),
+            
+            # **MÓDULO ESPECIAL PARA QUESTÕES**
+            "questoes_com_gabarito": self._get_questions_with_answer_key_module()
         }
     
     # **MÓDULOS BASE**
@@ -56,13 +60,43 @@ Retorne APENAS um JSON válido:
       "paragraph": 1,
       "error": "texto com erro",
       "correction": "texto corrigido",
-      "type": "tipo do erro",
-      "confidence": 0.95
+      "type": "tipo do erro"
     }
   ]
 }
 
-Se não houver correções: {"corrections": []}"""
+Se não houver correções: {"corrections": []                }"""
+        )
+    
+    def _get_questions_with_answer_key_module(self) -> PromptModule:
+        """Módulo especial para questões com gabarito"""
+        return PromptModule(
+            name="questoes_com_gabarito",
+            content="""**REVISÃO ESPECIAL DE QUESTÕES COM GABARITO**
+
+INSTRUÇÕES CRÍTICAS:
+
+1. **IDENTIFICAÇÃO AUTOMÁTICA**:
+   - Linhas marcadas com [ALTERNATIVA_CORRETA] = alternativa correta segundo o gabarito
+   - Linhas marcadas com [ALTERNATIVA_INCORRETA] = alternativas incorretas
+   - O sistema já identificou qual é qual baseado no gabarito
+
+2. **PARA [ALTERNATIVA_INCORRETA]**:
+   - Corrija APENAS erros gramaticais, ortográficos e de pontuação
+   - NUNCA corrija conteúdo factual (está errado de propósito!)
+   - NUNCA altere informações técnicas, datas, nomes ou conceitos
+   - Exemplo: "São Paulo é a capital do Brazil" → "São Paulo é a capital do Brasil"
+   - NÃO mude para "Brasília é a capital do Brasil" (isso é correção factual!)
+
+3. **PARA [ALTERNATIVA_CORRETA]**:
+   - Corrija TODOS os erros: gramática, ortografia, pontuação E factualidade
+   - Garanta que a informação está 100% correta
+   - Exemplo: "Brazília é a capital do Brazil" → "Brasília é a capital do Brasil"
+
+4. **IMPORTANTE**:
+   - Se não houver marcação [ALTERNATIVA_CORRETA/INCORRETA], trate como texto normal
+   - O gabarito em si (ex: "Gabarito: C") só precisa correção gramatical""",
+            priority=11
         )
     
     def _get_protections_module(self) -> PromptModule:
@@ -70,13 +104,40 @@ Se não houver correções: {"corrections": []}"""
         return PromptModule(
             name="protecoes",
             content="""**CONTEÚDO PROTEGIDO - NUNCA ALTERE**
-1. Alternativas de questões (a), b), c), d), e)
-2. Códigos BNCC (EF01LP01, EM13LGG101, etc)
-3. Citações entre aspas ou indentadas
-4. Poemas e versos (estrutura com quebras de linha)
-5. URLs e links completos
-6. Referências bibliográficas
-7. Termos técnicos da disciplina"""
+
+REGRA ABSOLUTA: Os seguintes conteúdos NUNCA devem ser modificados:
+
+1. **ALTERNATIVAS DE QUESTÕES**
+   - QUALQUER linha que comece com: a), b), c), d), e)
+   - QUALQUER linha que comece com: (a), (b), (c), (d), (e)
+   - QUALQUER linha que comece com: a., b., c., d., e.
+   - QUALQUER linha que comece com: A), B), C), D), E)
+   - Mesmo que contenham erros propositais ou factuais
+
+2. **CITAÇÕES E REFERÊNCIAS**
+   - Qualquer texto entre aspas com atribuição de autoria
+   - Textos com fonte indicada (Fonte:, Referência:, Extraído de:, Adaptado de:)
+   - Textos seguidos de referência bibliográfica ou URL
+   - Textos da Wikipedia ou qualquer outra fonte online
+   - Qualquer parágrafo que termine com indicação de fonte
+   - Textos indentados ou em itálico que sejam citações
+   - Blocos de texto seguidos por autor, data ou fonte
+
+3. **POEMAS E TEXTOS LITERÁRIOS**
+   - Versos de poemas (linhas curtas sem pontuação final)
+   - Textos com estrutura poética ou literária
+   - Letras de músicas
+   - Trechos de obras literárias
+
+4. **OUTROS PROTEGIDOS**
+   - Códigos BNCC (EF01LP01, EM13LGG101, etc)
+   - URLs e links completos
+   - Referências bibliográficas completas
+   - Gabaritos de questões
+   - Exemplos de erros (quando indicado)
+   - Fórmulas matemáticas e químicas
+
+IMPORTANTE: Na dúvida, NÃO ALTERE. É melhor preservar um texto com erro do que alterar uma citação original."""
         )
     
     # **MÓDULOS DE CORREÇÃO BÁSICA**
@@ -207,6 +268,33 @@ Se não houver correções: {"corrections": []}"""
             priority=9
         )
     
+    def _get_uniform_treatment_module(self) -> PromptModule:
+        """Módulo para tratamento uniforme de números e unidades."""
+        return PromptModule(
+            name="numeros_uniformes_padrao_internacional",
+            content="""**REGRAS DE FORMATAÇÃO NUMÉRICA (PADRÃO INTERNACIONAL)**
+
+1.  **SEPARADOR DE MILHARES**:
+    * Todos os números com quatro ou mais dígitos devem ter seus grupos de três dígitos separados por um **espaço fino não separável (Unicode `U+202F`)**.
+    * É estritamente **proibido** o uso de pontos (`.`) ou vírgulas (`,`) como separadores de milhares.
+    * **Exemplos de aplicação**:
+        * `1000` deve ser formatado como `1 000`
+        * `12345` deve ser formatado como `12 345`
+        * `1500000` deve ser formatado como `1 500 000`
+
+2.  **NÚMERO E UNIDADE**:
+    * Sempre utilize um **espaço não separável (Unicode `U+00A0`)** entre um número e sua respectiva unidade de medida (ex: cm, kg, km/h, R$).
+    * Esta regra garante que o número e sua unidade nunca sejam separados por uma quebra de linha.
+    * **Exemplos de aplicação**:
+        * `10cm` ou `10 cm` (com espaço comum) deve ser formatado como `10 cm` (com `U+00A0`).
+        * `R$50` deve ser formatado como `R$ 50` (com `U+00A0`).
+        * `78km` deve ser formatado como `78 km` (com `U+00A0`).
+
+3.  **INTEGRIDADE NUMÉRICA**:
+    * Um número completo, incluindo seus separadores de milhares e sua unidade (se aplicável), deve ser tratado como um bloco único e indivisível, **sempre permanecendo na mesma linha**. As regras acima garantem essa condição.""",
+        priority=10
+    )
+    
     # **MÓDULO DE SEGMENTAÇÃO**
     
     def _get_segmentation_module(self) -> PromptModule:
@@ -242,6 +330,14 @@ Retorne:
         """Retorna sequência de prompts baseada no modo"""
         
         sequences = {
+            # Modo ULTRA RÁPIDO - apenas o essencial
+            "fast": [
+                self.modules["formato"],
+                self.modules["protecoes"],
+                self.modules["erros_gramaticais"],
+                self.modules["pontuacao"]
+            ],
+            
             "conservador": [
                 self.modules["formato"],
                 self.modules["protecoes"],
@@ -266,11 +362,14 @@ Retorne:
                 self.modules["fluidez"],
                 self.modules["maneirismos_ia"],
                 self.modules["linguagem_didatica"],
-                self.modules["tratamento_uniforme"]
+                self.modules["tratamento_uniforme"],
+                self.modules["segmentacao"],
+                self.modules["questoes_com_gabarito"],
+                self.modules["numeros_uniformes_padrao_internacional"]
             ]
         }
         
-        return sequences.get(mode, sequences["balanceado"])
+        return sequences.get(mode, sequences["fast"])
     
     def build_prompt(self, modules: List[PromptModule], text: str) -> str:
         """Constrói prompt completo com módulos selecionados"""

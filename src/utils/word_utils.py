@@ -90,71 +90,62 @@ class WordDocumentHandler:
         return table_data
     
     @staticmethod
-    def create_document_from_content(content, revised_texts=None):
-        """Recria documento preservando estrutura e aplicando revisões"""
-        new_doc = Document()
+    def apply_correction_preserving_format(paragraph, error_text, correction_text):
+        """Aplica correção preservando ABSOLUTAMENTE TODA a formatação"""
         
-        # Remove o parágrafo padrão vazio
-        if new_doc.paragraphs:
-            p = new_doc.paragraphs[0]._element
-            p.getparent().remove(p)
+        # Verifica se o erro existe no parágrafo
+        full_text = ""
+        for run in paragraph.runs:
+            full_text += run.text
         
-        text_index = 0
+        if error_text not in full_text:
+            return False
         
-        for item in content:
-            if item['type'] == 'paragraph':
-                # Usa texto revisado se disponível
-                if revised_texts and text_index < len(revised_texts):
-                    new_text = revised_texts[text_index]
-                    text_index += 1
-                else:
-                    new_text = item['text']
+        error_pos = full_text.find(error_text)
+        error_end = error_pos + len(error_text)
+        
+        # ABORDAGEM SIMPLIFICADA: trabalha run por run
+        current_pos = 0
+        correction_applied = False
+        
+        for run in paragraph.runs:
+            run_start = current_pos
+            run_end = current_pos + len(run.text)
+            
+            # Se este run contém parte do erro
+            if run_start < error_end and run_end > error_pos:
+                # Calcula que parte do run deve ser mantida/alterada
                 
-                # Cria parágrafo com estilo original
-                para = new_doc.add_paragraph()
-                if item['style']:
-                    para.style = item['style']
-                if item['alignment']:
-                    para.alignment = item['alignment']
+                # Início do texto a manter (antes do erro)
+                keep_start = ""
+                if run_start < error_pos:
+                    keep_start = run.text[:error_pos - run_start]
                 
-                # Aplica formatação dos runs
-                WordDocumentHandler._apply_runs_to_paragraph(
-                    para, item['runs'], new_text
-                )
+                # Fim do texto a manter (depois do erro)
+                keep_end = ""
+                if run_end > error_end:
+                    keep_end = run.text[error_end - run_start:]
                 
-            elif item['type'] == 'table':
-                # Recria tabela
-                table_data = item['data']
-                if table_data:
-                    rows = len(table_data)
-                    cols = len(table_data[0]) if table_data[0] else 0
-                    table = new_doc.add_table(rows=rows, cols=cols)
-                    
-                    for r_idx, row_data in enumerate(table_data):
-                        for c_idx, cell_data in enumerate(row_data):
-                            cell = table.cell(r_idx, c_idx)
-                            # Limpa célula
-                            for p in cell.paragraphs:
-                                p._element.getparent().remove(p._element)
-                            
-                            # Adiciona parágrafos na célula
-                            for para_data in cell_data:
-                                para = cell.add_paragraph()
-                                if para_data.get('style'):
-                                    para.style = para_data['style']
-                                
-                                # Usa texto revisado se disponível
-                                if revised_texts and text_index < len(revised_texts):
-                                    new_text = revised_texts[text_index]
-                                    text_index += 1
-                                else:
-                                    new_text = para_data['text']
-                                
-                                WordDocumentHandler._apply_runs_to_paragraph(
-                                    para, para_data['runs'], new_text
-                                )
+                # Parte da correção que vai neste run
+                correction_part = ""
+                if not correction_applied:
+                    correction_part = correction_text
+                    correction_applied = True
+                
+                # Atualiza APENAS o texto, mantendo TODA a formatação
+                run.text = keep_start + correction_part + keep_end
+                
+                # Se o erro estava completamente neste run, podemos parar
+                if run_start <= error_pos and run_end >= error_end:
+                    return True
+                
+            elif run_start >= error_pos and run_end <= error_end:
+                # Este run está completamente dentro do erro - limpa ele
+                run.text = ""
+            
+            current_pos += len(run.text)
         
-        return new_doc
+        return correction_applied
     
     @staticmethod
     def _apply_runs_to_paragraph(paragraph, original_runs, new_text):

@@ -17,7 +17,7 @@ class Config:
             self.save_config(config)
         
         self.API_KEY = config.get("api_key", "")
-        self.MODEL = config.get("model", "gpt-5")  # SEMPRE gpt-4.1
+        self.MODEL = config.get("model", "gpt-4.1")  # SEMPRE gpt-4.1
         self.MAX_TOKENS_PER_CHUNK = config.get("max_tokens_per_chunk", 50000)  # Maior para gpt-4.1
         self.MAX_RETRIES = config.get("max_retries", 3)
         self.OUTPUT_PATHS = config.get("output_paths", {
@@ -29,8 +29,8 @@ class Config:
     def get_default_config(self):
         return {
             "api_key": "",
-            "model": "gpt-5",  # SEMPRE gpt-4.1
-            "max_tokens_per_chunk": 50000,  # Aproveita janela maior do gpt-4.1
+            "model": "gpt-4.1",  # SEMPRE gpt-4.1
+            "max_tokens_per_chunk": 10000,  # Aproveita janela maior do gpt-4.1
             "max_retries": 3,
             "output_paths": {
                 "revised": "output/revised",

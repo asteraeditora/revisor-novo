@@ -11,13 +11,13 @@ from ..utils.api_client import OpenAIClient
 class DocumentProcessor:
     """Processa documentos Word - Versão COMPLETA que processa TUDO"""
     
-    def __init__(self, api_key: str, model: str = "gpt-5"):
+    def __init__(self, api_key: str, model: str = "gpt-4.1"):
         self.api_client = OpenAIClient(api_key, model)
         self.api_key = api_key
         self.model = model
         self.word_handler = WordDocumentHandler()
         self.logger = logging.getLogger(__name__)
-        self.max_chunk_size = 50000  # Aproveita janela do gpt-4.1
+        self.max_chunk_size = 10000  # Aproveita janela do gpt-4.1
     
     def process_document(self, input_path: str, output_path: str, callback=None):
         """Processa documento corrigindo TODOS os erros reais"""
