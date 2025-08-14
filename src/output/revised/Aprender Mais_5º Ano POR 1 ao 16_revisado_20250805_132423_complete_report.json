@@ -1,0 +1,197 @@
+{
+  "summary": {
+    "total_corrections": 16,
+    "reported_by_api": 18,
+    "auto_detected": 0,
+    "by_type": {
+      "regência": 1,
+      "acentuação": 2,
+      "pontuação obrigatória": 1,
+      "pontuação": 8,
+      "ortografia": 3,
+      "concordância": 1
+    },
+    "by_source": {
+      "api": 16,
+      "auto_detected": 0
+    }
+  },
+  "all_corrections": [
+    {
+      "location": "Parágrafo 1153",
+      "doc_index": 1152,
+      "error": "A palavra notícia tem origem do latim e significa: notoriedade, conhecimento, ideia e conceito.",
+      "correction": "A palavra notícia tem origem no latim e significa: notoriedade, conhecimento, ideia e conceito.",
+      "type": "regência",
+      "original_text": "Uma característica da notícia é a rapidez para a publicação, portanto o título precisa mostrar ao leitor a importância do fato noticiado. A palavra notícia tem origem do latim e significa: notoriedade, conhecimento, ideia e conceito. A notícia deve ser imparcial, ou seja, não pode haver opinião sobre ela e publicada praticamente em tempo real ao fato ocorrido. A notícia segue esta estrutura: ",
+      "corrected_text": "Uma característica da notícia é a rapidez para a publicação, portanto o título precisa mostrar ao leitor a importância do fato noticiado. A palavra notícia tem origem no latim e significa: notoriedade, conhecimento, ideia e conceito. A notícia deve ser imparcial, ou seja, não pode haver opinião sobre ela e publicada praticamente em tempo real ao fato ocorrido. A notícia segue esta estrutura: ",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 2623",
+      "doc_index": 2622,
+      "error": "é comum que os verbos apareçam no modo imperativo",
+      "correction": "É comum que os verbos apareçam no modo imperativo",
+      "type": "acentuação",
+      "original_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. é comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "corrected_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. É comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 2698",
+      "doc_index": 2697,
+      "error": "<legenda: O pão de queijo é um saboroso símbolo da culinária brasileira, perfeito para qualquer hora do dia",
+      "correction": "<legenda: O pão de queijo é um saboroso símbolo da culinária brasileira, perfeito para qualquer hora do dia>",
+      "type": "pontuação obrigatória",
+      "original_text": "<legenda: O pão de queijo é um saboroso símbolo da culinária brasileira, perfeito para qualquer hora do dia",
+      "corrected_text": "<legenda: O pão de queijo é um saboroso símbolo da culinária brasileira, perfeito para qualquer hora do dia>",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3186",
+      "doc_index": 3185,
+      "error": "Ela traz informações essenciais para o uso correto e seguro do medicamento.>",
+      "correction": "Ela traz informações essenciais para o uso correto e seguro do medicamento.",
+      "type": "pontuação",
+      "original_text": "Ela traz informações essenciais para o uso correto e seguro do medicamento.>",
+      "corrected_text": "Ela traz informações essenciais para o uso correto e seguro do medicamento.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3302",
+      "doc_index": 3301,
+      "error": "Prurido: Sensação de coceira intensa na pele, que dá vontade de coçar constantemente.",
+      "correction": "Prurido: Sensação de coceira intensa na pele, que dá vontade de coçar constantemente",
+      "type": "pontuação",
+      "original_text": "Prurido: Sensação de coceira intensa na pele, que dá vontade de coçar constantemente.",
+      "corrected_text": "Prurido: Sensação de coceira intensa na pele, que dá vontade de coçar constantemente",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3303",
+      "doc_index": 3302,
+      "error": "Tópico: Relativo à aplicação sobre a pele. Quando um medicamento é usado topicamente, ele deve ser passado na superfície da pele (como pomadas, cremes e loções), em vez de ser ingerido ou injetado.",
+      "correction": "Tópico: Relativo à aplicação sobre a pele. Quando um medicamento é usado topicamente, ele deve ser passado na superfície da pele (como pomadas, cremes e loções), em vez de ser ingerido ou injetado",
+      "type": "pontuação",
+      "original_text": "Tópico: Relativo à aplicação sobre a pele. Quando um medicamento é usado topicamente, ele deve ser passado na superfície da pele (como pomadas, cremes e loções), em vez de ser ingerido ou injetado.",
+      "corrected_text": "Tópico: Relativo à aplicação sobre a pele. Quando um medicamento é usado topicamente, ele deve ser passado na superfície da pele (como pomadas, cremes e loções), em vez de ser ingerido ou injetado",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3274",
+      "doc_index": 3273,
+      "error": "( ) Inflamações em geral. ",
+      "correction": "( ) Inflamações em geral.",
+      "type": "pontuação",
+      "original_text": "( ) Inflamações em geral. ",
+      "corrected_text": "( ) Inflamações em geral.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3276",
+      "doc_index": 3275,
+      "error": "( ) Para tratar otite. ",
+      "correction": "( ) Para tratar otite.",
+      "type": "pontuação",
+      "original_text": "( ) Para tratar otite. ",
+      "corrected_text": "( ) Para tratar otite.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3719",
+      "doc_index": 3718,
+      "error": "Como você fica sabendo do que acontece no mundo todos os dias? É por meio da notícia e da reportagem que nos comunicamos com a realidade, entendemos os fatos e formamos nossas opiniões. Aprender sobre esses gêneros textuais é descobrir como a informação chega até nós e como ela nos torna cidadãos mais críticos, curiosos e bem informados!",
+      "correction": "Como você fica sabendo do que acontece no mundo todos os dias? É por meio da notícia e da reportagem que nos comunicamos com a realidade, entendemos os fatos e formamos nossas opiniões. Aprender sobre esses gêneros textuais é descobrir como a informação chega até nós e como ela nos torna cidadãos mais críticos, curiosos e bem-informados!",
+      "type": "ortografia",
+      "original_text": "Como você fica sabendo do que acontece no mundo todos os dias? É por meio da notícia e da reportagem que nos comunicamos com a realidade, entendemos os fatos e formamos nossas opiniões. Aprender sobre esses gêneros textuais é descobrir como a informação chega até nós e como ela nos torna cidadãos mais críticos, curiosos e bem informados!",
+      "corrected_text": "Como você fica sabendo do que acontece no mundo todos os dias? É por meio da notícia e da reportagem que nos comunicamos com a realidade, entendemos os fatos e formamos nossas opiniões. Aprender sobre esses gêneros textuais é descobrir como a informação chega até nós e como ela nos torna cidadãos mais críticos, curiosos e bem-informados!",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3755",
+      "doc_index": 3754,
+      "error": "• Ensina a olhar além do óbvio, considerando diferentes pontos de vista..",
+      "correction": "• Ensina a olhar além do óbvio, considerando diferentes pontos de vista.",
+      "type": "pontuação",
+      "original_text": "Por que entender a reportagem é importante?\n• Ajuda você a se informar de verdade sobre o que acontece no mundo.\n• Ensina a olhar além do óbvio, considerando diferentes pontos de vista..\n• Desenvolve seu pensamento crítico e a capacidade de fazer boas perguntas.",
+      "corrected_text": "Por que entender a reportagem é importante?\n• Ajuda você a se informar de verdade sobre o que acontece no mundo.\n• Ensina a olhar além do óbvio, considerando diferentes pontos de vista.\n• Desenvolve seu pensamento crítico e a capacidade de fazer boas perguntas.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3756",
+      "doc_index": 3755,
+      "error": "Da próxima vez que você  ler uma reportagem, observe cada parte com atenção e tente compreender  tudo o que ela quer transmitir. Assim, você vai ficar sempre bem-informado e pronto  para conversar com segurança sobre os assuntos do  seu dia a dia!",
+      "correction": "Da próxima vez que você ler uma reportagem, observe cada parte com atenção e tente compreender tudo o que ela quer transmitir. Assim, você vai ficar sempre bem-informado e pronto para conversar com segurança sobre os assuntos do seu dia a dia!",
+      "type": "ortografia",
+      "original_text": "Da próxima vez que você  ler uma reportagem, observe cada parte com atenção e tente compreender  tudo o que ela quer transmitir. Assim, você vai ficar sempre bem-informado e pronto  para conversar com segurança sobre os assuntos do  seu dia a dia!",
+      "corrected_text": "Da próxima vez que você ler uma reportagem, observe cada parte com atenção e tente compreender tudo o que ela quer transmitir. Assim, você vai ficar sempre bem-informado e pronto para conversar com segurança sobre os assuntos do seu dia a dia!",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3781",
+      "doc_index": 3780,
+      "error": "Por RJ2 16/04/2020 20h28. Atualizado há 5 anos",
+      "correction": "Por RJ2 16/04/2020 20h28. Atualizado há 5 anos",
+      "type": "acentuação",
+      "original_text": "Por RJ2 16/04/2020 20h28. Atualizado há 5 anos",
+      "corrected_text": "Por RJ2 16/04/2020 20h28. Atualizado há 5 anos",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3903",
+      "doc_index": 3902,
+      "error": "O Museu Nacional de Arte Letã localizado em Riga, capital da Letônia, tornou-se a casa da estatueta dourada do Oscar 2025 de Flow, filme que conquistou o Oscar de Melhor Animação. Esta é a primeira vez que um longa do país europeu venceu a principal premiação dos cinemas.",
+      "correction": "O Museu Nacional de Arte Letã, localizado em Riga, capital da Letônia, tornou-se a casa da estatueta dourada do Oscar 2025 de Flow, filme que conquistou o Oscar de Melhor Animação. Esta é a primeira vez que um longa do país europeu venceu a principal premiação dos cinemas.",
+      "type": "pontuação",
+      "original_text": "O Museu Nacional de Arte Letã localizado em Riga, capital da Letônia, tornou-se a casa da estatueta dourada do Oscar 2025 de Flow, filme que conquistou o Oscar de Melhor Animação. Esta é a primeira vez que um longa do país europeu venceu a principal premiação dos cinemas.",
+      "corrected_text": "O Museu Nacional de Arte Letã, localizado em Riga, capital da Letônia, tornou-se a casa da estatueta dourada do Oscar 2025 de Flow, filme que conquistou o Oscar de Melhor Animação. Esta é a primeira vez que um longa do país europeu venceu a principal premiação dos cinemas.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3924",
+      "doc_index": 3923,
+      "error": "Em uma coprodução entre Letônia, Bélgica e França, Flow usa sons de animais reais e preza por retratar cada um deles da forma mais realista possível. Para isso, os produtores e diretor contaram com um orçamento discreto de 3,5 milhões de euros e utilizaram um software gratuito para criar todas as cenas.",
+      "correction": "Em uma coprodução entre Letônia, Bélgica e França, Flow usa sons de animais reais e preza por retratar cada um deles da forma mais realista possível. Para isso, os produtores e o diretor contaram com um orçamento discreto de 3,5 milhões de euros e utilizaram um software gratuito para criar todas as cenas.",
+      "type": "concordância",
+      "original_text": "Em uma coprodução entre Letônia, Bélgica e França, Flow usa sons de animais reais e preza por retratar cada um deles da forma mais realista possível. Para isso, os produtores e diretor contaram com um orçamento discreto de 3,5 milhões de euros e utilizaram um software gratuito para criar todas as cenas.",
+      "corrected_text": "Em uma coprodução entre Letônia, Bélgica e França, Flow usa sons de animais reais e preza por retratar cada um deles da forma mais realista possível. Para isso, os produtores e o diretor contaram com um orçamento discreto de 3,5 milhões de euros e utilizaram um software gratuito para criar todas as cenas.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 4200",
+      "doc_index": 4199,
+      "error": "Fale aos estudantes que cada linha do poema se chama verso e que o conjunto de versos se chama estrofe. Aproveite para falar da rima, que é um recurso musical baseado na repetição de sons iguais ou semelhantes no final dos versos (rima externa) ou no interior dos versos (rima interna).",
+      "correction": "Fale aos estudantes que cada linha do poema se chama verso e que o conjunto de versos se chama estrofe. Aproveite para falar da rima, que é um recurso musical baseado na repetição de sons iguais ou semelhantes no final dos versos (rima externa) ou no interior dos versos (rima interna)",
+      "type": "pontuação",
+      "original_text": "Fale aos estudantes que cada linha do poema se chama verso e que o conjunto de versos se chama estrofe. Aproveite para falar da rima, que é um recurso musical baseado na repetição de sons iguais ou semelhantes no final dos versos (rima externa) ou no interior dos versos (rima interna).",
+      "corrected_text": "Fale aos estudantes que cada linha do poema se chama verso e que o conjunto de versos se chama estrofe. Aproveite para falar da rima, que é um recurso musical baseado na repetição de sons iguais ou semelhantes no final dos versos (rima externa) ou no interior dos versos (rima interna)",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 4948",
+      "doc_index": 4947,
+      "error": "acesso em 29 jun 2025",
+      "correction": "Acesso em: 29 jun. 2025",
+      "type": "ortografia",
+      "original_text": "ALVES, Rubens. A pipoca. 29 ago. 1999, p. 61-64. Texto publicado originalmente no jornal Correio Popular. Encontrado em: https://clubedapipoca.com/milho-de-pipoca-rubem-alves/ acesso em 29 jun 2025",
+      "corrected_text": "ALVES, Rubens. A pipoca. 29 ago. 1999, p. 61-64. Texto publicado originalmente no jornal Correio Popular. Encontrado em: https://clubedapipoca.com/milho-de-pipoca-rubem-alves/ Acesso em: 29 jun. 2025",
+      "source": "api",
+      "applied": true
+    }
+  ]
+}

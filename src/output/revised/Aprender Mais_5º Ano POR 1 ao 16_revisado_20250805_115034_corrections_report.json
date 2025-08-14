@@ -1,0 +1,25 @@
+{
+  "total_corrections": 2,
+  "corrections_by_type": {
+    "concordância": 1,
+    "pontuação": 1
+  },
+  "detailed_corrections": [
+    {
+      "line": 90,
+      "error": "mídias impressa, de massa e digital",
+      "correction": "mídias impressas, de massa e digitais",
+      "type": "concordância",
+      "text_index": 0,
+      "location": "Parágrafo 36"
+    },
+    {
+      "line": 99,
+      "error": "e/ ou",
+      "correction": "e/ou",
+      "type": "pontuação",
+      "text_index": 0,
+      "location": "Parágrafo 38"
+    }
+  ]
+}

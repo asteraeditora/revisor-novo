@@ -1,0 +1,75 @@
+{
+  "summary": {
+    "total_corrections": 5,
+    "reported_by_api": 5,
+    "auto_detected": 0,
+    "by_type": {
+      "concordância": 1,
+      "acentuação": 1,
+      "pontuação obrigatória": 1,
+      "pontuação": 1,
+      "ortografia": 1
+    },
+    "by_source": {
+      "api": 5,
+      "auto_detected": 0
+    }
+  },
+  "all_corrections": [
+    {
+      "location": "Parágrafo 1166",
+      "doc_index": 1165,
+      "error": "como: a casa, a rua, a comunidade, a escola e nas mídias impressa, de massa e digital",
+      "correction": "como: a casa, a rua, a comunidade, a escola e nas mídias impressas, de massa e digitais",
+      "type": "concordância",
+      "original_text": "(EF15LP01) Identificar a função social de textos que circulam em campos da vida social dos quais participa cotidianamente, como: a casa, a rua, a comunidade, a escola e nas mídias impressa, de massa e digital, reconhecendo para que foram produzidos, onde circulam, quem os produziu e a quem se destinam. ",
+      "corrected_text": "(EF15LP01) Identificar a função social de textos que circulam em campos da vida social dos quais participa cotidianamente, como: a casa, a rua, a comunidade, a escola e nas mídias impressas, de massa e digitais, reconhecendo para que foram produzidos, onde circulam, quem os produziu e a quem se destinam. ",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 2623",
+      "doc_index": 2622,
+      "error": "é comum que os verbos apareçam no modo imperativo",
+      "correction": "É comum que os verbos apareçam no modo imperativo",
+      "type": "acentuação",
+      "original_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. é comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "corrected_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. É comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 2698",
+      "doc_index": 2697,
+      "error": "<legenda: O pão de queijo é um saboroso símbolo da culinária brasileira, perfeito para qualquer hora do dia",
+      "correction": "<legenda: O pão de queijo é um saboroso símbolo da culinária brasileira, perfeito para qualquer hora do dia>",
+      "type": "pontuação obrigatória",
+      "original_text": "<legenda: O pão de queijo é um saboroso símbolo da culinária brasileira, perfeito para qualquer hora do dia",
+      "corrected_text": "<legenda: O pão de queijo é um saboroso símbolo da culinária brasileira, perfeito para qualquer hora do dia>",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 4568",
+      "doc_index": 4567,
+      "error": "D) Sul",
+      "correction": "D) Sul.",
+      "type": "pontuação",
+      "original_text": "C) Norte.\nD) Sul",
+      "corrected_text": "C) Norte.\nD) Sul.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 4948",
+      "doc_index": 4947,
+      "error": "acesso em 29 jun 2025",
+      "correction": "Acesso em: 29 jun. 2025",
+      "type": "ortografia",
+      "original_text": "ALVES, Rubens. A pipoca. 29 ago. 1999, p. 61-64. Texto publicado originalmente no jornal Correio Popular. Encontrado em: https://clubedapipoca.com/milho-de-pipoca-rubem-alves/ acesso em 29 jun 2025",
+      "corrected_text": "ALVES, Rubens. A pipoca. 29 ago. 1999, p. 61-64. Texto publicado originalmente no jornal Correio Popular. Encontrado em: https://clubedapipoca.com/milho-de-pipoca-rubem-alves/ Acesso em: 29 jun. 2025",
+      "source": "api",
+      "applied": true
+    }
+  ]
+}

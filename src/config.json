@@ -1,0 +1,11 @@
+{
+    "api_key": "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",
+    "model": "gpt-4.1",
+    "max_tokens_per_chunk": 10000,
+    "max_retries": 3,
+    "output_paths": {
+        "revised": "output/revised",
+        "comparisons": "output/comparisons",
+        "logs": "output/logs"
+    }
+}

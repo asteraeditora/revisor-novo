@@ -1,0 +1,227 @@
+{
+  "summary": {
+    "total_corrections": 19,
+    "reported_by_api": 19,
+    "auto_detected": 0,
+    "by_type": {
+      "pontuação": 3,
+      "acentuação": 1,
+      "ortografia": 15
+    },
+    "by_source": {
+      "api": 19,
+      "auto_detected": 0
+    }
+  },
+  "all_corrections": [
+    {
+      "location": "Parágrafo 326",
+      "doc_index": 325,
+      "error": "Legenda: Verbete é um texto curto que explica palavras de forma clara, com eles podemos descobrir o mundo nos dicionários!",
+      "correction": "Legenda: Verbete é um texto curto que explica palavras de forma clara; com eles, podemos descobrir o mundo nos dicionários!",
+      "type": "pontuação",
+      "original_text": "Legenda: Verbete é um texto curto que explica palavras de forma clara, com eles podemos descobrir o mundo nos dicionários!",
+      "corrected_text": "Legenda: Verbete é um texto curto que explica palavras de forma clara; com eles, podemos descobrir o mundo nos dicionários!",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 1538",
+      "doc_index": 1537,
+      "error": "Nelas, fatos simples do dia a dia ganham um toque inesperado que faz a gente rir e, às vezes, até refletir sobre nossas próprias atitudes.",
+      "correction": "Nelas, fatos simples do dia a dia ganham um toque inesperado, que faz a gente rir e, às vezes, até refletir sobre nossas próprias atitudes.",
+      "type": "pontuação",
+      "original_text": "Você já ouviu uma boa anedota? Já reparou em como poucas linhas podem transformar um momento comum em uma gargalhada? As anedotas são assim: curtinhas, marcantes e, quase sempre, inesquecíveis!\nNelas, fatos simples do dia a dia ganham um toque inesperado que faz a gente rir e, às vezes, até refletir sobre nossas próprias atitudes. Com uma estrutura enxuta, uma anedota desperta empatia, aproxima pessoas e quebra o gelo em qualquer conversa.",
+      "corrected_text": "Você já ouviu uma boa anedota? Já reparou em como poucas linhas podem transformar um momento comum em uma gargalhada? As anedotas são assim: curtinhas, marcantes e, quase sempre, inesquecíveis!\nNelas, fatos simples do dia a dia ganham um toque inesperado, que faz a gente rir e, às vezes, até refletir sobre nossas próprias atitudes. Com uma estrutura enxuta, uma anedota desperta empatia, aproxima pessoas e quebra o gelo em qualquer conversa.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 2623",
+      "doc_index": 2622,
+      "error": "é comum que os verbos apareçam no modo imperativo",
+      "correction": "É comum que os verbos apareçam no modo imperativo",
+      "type": "acentuação",
+      "original_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. é comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "corrected_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. É comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3755",
+      "doc_index": 3754,
+      "error": "pontos de vista..",
+      "correction": "pontos de vista.",
+      "type": "pontuação",
+      "original_text": "Por que entender a reportagem é importante?\n• Ajuda você a se informar de verdade sobre o que acontece no mundo.\n• Ensina a olhar além do óbvio, considerando diferentes pontos de vista..\n• Desenvolve seu pensamento crítico e a capacidade de fazer boas perguntas.",
+      "corrected_text": "Por que entender a reportagem é importante?\n• Ajuda você a se informar de verdade sobre o que acontece no mundo.\n• Ensina a olhar além do óbvio, considerando diferentes pontos de vista.\n• Desenvolve seu pensamento crítico e a capacidade de fazer boas perguntas.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3756",
+      "doc_index": 3755,
+      "error": "você  ler",
+      "correction": "você ler",
+      "type": "ortografia",
+      "original_text": "Da próxima vez que você  ler uma reportagem, observe cada parte com atenção e tente compreender  tudo o que ela quer transmitir. Assim, você vai ficar sempre bem-informado e pronto  para conversar com segurança sobre os assuntos do  seu dia a dia!",
+      "corrected_text": "Da próxima vez que você ler uma reportagem, observe cada parte com atenção e tente compreender  tudo o que ela quer transmitir. Assim, você vai ficar sempre bem-informado e pronto  para conversar com segurança sobre os assuntos do  seu dia a dia!",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3756",
+      "doc_index": 3755,
+      "error": "compreender  tudo",
+      "correction": "compreender tudo",
+      "type": "ortografia",
+      "original_text": "Da próxima vez que você ler uma reportagem, observe cada parte com atenção e tente compreender  tudo o que ela quer transmitir. Assim, você vai ficar sempre bem-informado e pronto  para conversar com segurança sobre os assuntos do  seu dia a dia!",
+      "corrected_text": "Da próxima vez que você ler uma reportagem, observe cada parte com atenção e tente compreender tudo o que ela quer transmitir. Assim, você vai ficar sempre bem-informado e pronto  para conversar com segurança sobre os assuntos do  seu dia a dia!",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 2, Célula (1,1)",
+      "doc_index": "table_1_0_0_1",
+      "error": "Eixo coggnitivo",
+      "correction": "Eixo cognitivo",
+      "type": "ortografia",
+      "original_text": "Eixo coggnitivo: Inferir informações implícitas em textos.",
+      "corrected_text": "Eixo cognitivo: Inferir informações implícitas em textos.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 2, Célula (1,1)",
+      "doc_index": "table_1_0_0_2",
+      "error": "Eixo cogngitivo",
+      "correction": "Eixo cognitivo",
+      "type": "ortografia",
+      "original_text": "Eixo cogngitivo: Identificar a ideia central do texto.",
+      "corrected_text": "Eixo cognitivo: Identificar a ideia central do texto.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 2, Célula (1,1)",
+      "doc_index": "table_1_0_0_3",
+      "error": "Eixo cognitgivo",
+      "correction": "Eixo cognitivo",
+      "type": "ortografia",
+      "original_text": "Eixo cognitgivo: Identificar elementos constitutivos de textos narrativos.",
+      "corrected_text": "Eixo cognitivo: Identificar elementos constitutivos de textos narrativos.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 2, Célula (1,1)",
+      "doc_index": "table_1_0_0_4",
+      "error": "Eixo cognitivgo",
+      "correction": "Eixo cognitivo",
+      "type": "ortografia",
+      "original_text": "Eixo cognitivgo: Identificar os mecanismos de referenciação lexical e pronominal.",
+      "corrected_text": "Eixo cognitivo: Identificar os mecanismos de referenciação lexical e pronominal.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 2, Célula (1,1)",
+      "doc_index": "table_1_0_0_5",
+      "error": "Eixo cognitivod",
+      "correction": "Eixo cognitivo",
+      "type": "ortografia",
+      "original_text": "Eixo cognitivod: Inferir o sentido de palavras ou expressões em textos",
+      "corrected_text": "Eixo cognitivo: Inferir o sentido de palavras ou expressões em textos",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 2, Célula (1,1)",
+      "doc_index": "table_1_0_0_6",
+      "error": "sIdentificar",
+      "correction": "Identificar",
+      "type": "ortografia",
+      "original_text": "Eixo cognitivo: sIdentificar a ideia central do texto.",
+      "corrected_text": "Eixo cognitivo: Identificar a ideia central do texto.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 2, Célula (1,1)",
+      "doc_index": "table_1_0_0_7",
+      "error": "Isdentificar",
+      "correction": "Identificar",
+      "type": "ortografia",
+      "original_text": "Eixo cognitivo: Isdentificar os elementos constitutivos de textos narrativos.",
+      "corrected_text": "Eixo cognitivo: Identificar os elementos constitutivos de textos narrativos.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 2, Célula (1,1)",
+      "doc_index": "table_1_0_0_8",
+      "error": "Aanalisar",
+      "correction": "Analisar",
+      "type": "ortografia",
+      "original_text": "Eixo cognitivo: Aanalisar relações de causa e consequência.",
+      "corrected_text": "Eixo cognitivo: Analisar relações de causa e consequência.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 3, Célula (1,1)",
+      "doc_index": "table_2_0_0_8",
+      "error": "expreassivos",
+      "correction": "expressivos",
+      "type": "ortografia",
+      "original_text": "BNCC (EF15LP04) Identificar o efeito de sentido produzido pelo uso de recursos expreassivos gráfico-visuais em textos multissemióticos.",
+      "corrected_text": "BNCC (EF15LP04) Identificar o efeito de sentido produzido pelo uso de recursos expressivos gráfico-visuais em textos multissemióticos.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 3, Célula (1,1)",
+      "doc_index": "table_2_0_0_12",
+      "error": "verabos",
+      "correction": "verbos",
+      "type": "ortografia",
+      "original_text": "BNCC (EF35LP22) Perceber diálogos em textos narrativos, observando o efeito de sentido de verabos de enunciação e, se for o caso, o uso de variedades linguísticas no discurso direto.",
+      "corrected_text": "BNCC (EF35LP22) Perceber diálogos em textos narrativos, observando o efeito de sentido de verbos de enunciação e, se for o caso, o uso de variedades linguísticas no discurso direto.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 4, Célula (1,1)",
+      "doc_index": "table_3_0_0_1",
+      "error": "sendoa",
+      "correction": "sendo",
+      "type": "ortografia",
+      "original_text": "Mesmo sendoa pequena, a tirinha pode fazer a gente rir, pensar ou até refletir sobre situações do nosso daia a dia. Ela usa desenhos para mostrar os personagens e o que está acontecendo, e aas falas aparecem dentro de balões. Além disso, os personagens podem se expressar por meio de balões de pensamento, que mostram o que eles estão sentindo ou imaginando.",
+      "corrected_text": "Mesmo sendo pequena, a tirinha pode fazer a gente rir, pensar ou até refletir sobre situações do nosso daia a dia. Ela usa desenhos para mostrar os personagens e o que está acontecendo, e aas falas aparecem dentro de balões. Além disso, os personagens podem se expressar por meio de balões de pensamento, que mostram o que eles estão sentindo ou imaginando.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 4, Célula (1,1)",
+      "doc_index": "table_3_0_0_1",
+      "error": "daia",
+      "correction": "dia",
+      "type": "ortografia",
+      "original_text": "Mesmo sendo pequena, a tirinha pode fazer a gente rir, pensar ou até refletir sobre situações do nosso daia a dia. Ela usa desenhos para mostrar os personagens e o que está acontecendo, e aas falas aparecem dentro de balões. Além disso, os personagens podem se expressar por meio de balões de pensamento, que mostram o que eles estão sentindo ou imaginando.",
+      "corrected_text": "Mesmo sendo pequena, a tirinha pode fazer a gente rir, pensar ou até refletir sobre situações do nosso dia a dia. Ela usa desenhos para mostrar os personagens e o que está acontecendo, e aas falas aparecem dentro de balões. Além disso, os personagens podem se expressar por meio de balões de pensamento, que mostram o que eles estão sentindo ou imaginando.",
+      "source": "api",
+      "applied": true
+    },
+    {
+      "location": "Tabela 4, Célula (1,1)",
+      "doc_index": "table_3_0_0_0",
+      "error": "aas",
+      "correction": "as",
+      "type": "ortografia",
+      "original_text": "A tirinha é um tipo de texto bem curtinho que mistura imagens e palavras para contar uma pequena história. Ela é formada, geralmente, por três ou quatro quadrinhos, que mostram cenaas rápidas, como se fossem pedaços de um filme em desenho.",
+      "corrected_text": "A tirinha é um tipo de texto bem curtinho que mistura imagens e palavras para contar uma pequena história. Ela é formada, geralmente, por três ou quatro quadrinhos, que mostram cenas rápidas, como se fossem pedaços de um filme em desenho.",
+      "source": "api",
+      "applied": true
+    }
+  ]
+}

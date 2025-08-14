@@ -1,0 +1,115 @@
+{
+  "summary": {
+    "total_errors_found": 6,
+    "total_corrections_applied": 5,
+    "corrections_failed": 1,
+    "by_type": {
+      "concordância": 2,
+      "acentuação": 1,
+      "pontuação": 1,
+      "ortografia/acentuação": 1
+    }
+  },
+  "applied_corrections": [
+    {
+      "location": "Parágrafo 1153",
+      "error": "A palavra notícia tem origem do latim e significa: notoriedade, conhecimento, ideia e conceito.",
+      "correction": "A palavra notícia tem origem no latim e significa: notoriedade, conhecimento, ideia e conceito.",
+      "type": "concordância",
+      "original_text": "Uma característica da notícia é a rapidez para a publicação, portanto o título precisa mostrar ao leitor a importância do fato noticiado. A palavra notícia tem origem do latim e significa: notoriedade, conhecimento, ideia e conceito. A notícia deve ser imparcial, ou seja, não pode haver opinião sobre ela e publicada praticamente em tempo real ao fato ocorrido. A notícia segue esta estrutura: ",
+      "corrected_text": "Uma característica da notícia é a rapidez para a publicação, portanto o título precisa mostrar ao leitor a importância do fato noticiado. A palavra notícia tem origem no latim e significa: notoriedade, conhecimento, ideia e conceito. A notícia deve ser imparcial, ou seja, não pode haver opinião sobre ela e publicada praticamente em tempo real ao fato ocorrido. A notícia segue esta estrutura: ",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 2623",
+      "error": "é comum que os verbos apareçam no modo imperativo",
+      "correction": "É comum que os verbos apareçam no modo imperativo",
+      "type": "acentuação",
+      "original_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. é comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "corrected_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. É comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3755",
+      "error": "diferentes pontos de vista..",
+      "correction": "diferentes pontos de vista.",
+      "type": "pontuação",
+      "original_text": "Por que entender a reportagem é importante?\n• Ajuda você a se informar de verdade sobre o que acontece no mundo.\n• Ensina a olhar além do óbvio, considerando diferentes pontos de vista..\n• Desenvolve seu pensamento crítico e a capacidade de fazer boas perguntas.",
+      "corrected_text": "Por que entender a reportagem é importante?\n• Ajuda você a se informar de verdade sobre o que acontece no mundo.\n• Ensina a olhar além do óbvio, considerando diferentes pontos de vista.\n• Desenvolve seu pensamento crítico e a capacidade de fazer boas perguntas.",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 4688",
+      "error": "[Inserir 3 linha]",
+      "correction": "[Inserir 3 linhas]",
+      "type": "concordância",
+      "original_text": "[Inserir 3 linha]",
+      "corrected_text": "[Inserir 3 linhas]",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 4948",
+      "error": "acesso em 29 jun 2025",
+      "correction": "Acesso em: 29 jun. 2025",
+      "type": "ortografia/acentuação",
+      "original_text": "ALVES, Rubens. A pipoca. 29 ago. 1999, p. 61-64. Texto publicado originalmente no jornal Correio Popular. Encontrado em: https://clubedapipoca.com/milho-de-pipoca-rubem-alves/ acesso em 29 jun 2025",
+      "corrected_text": "ALVES, Rubens. A pipoca. 29 ago. 1999, p. 61-64. Texto publicado originalmente no jornal Correio Popular. Encontrado em: https://clubedapipoca.com/milho-de-pipoca-rubem-alves/ Acesso em: 29 jun. 2025",
+      "applied": true
+    }
+  ],
+  "all_corrections": [
+    {
+      "location": "Parágrafo 1153",
+      "error": "A palavra notícia tem origem do latim e significa: notoriedade, conhecimento, ideia e conceito.",
+      "correction": "A palavra notícia tem origem no latim e significa: notoriedade, conhecimento, ideia e conceito.",
+      "type": "concordância",
+      "original_text": "Uma característica da notícia é a rapidez para a publicação, portanto o título precisa mostrar ao leitor a importância do fato noticiado. A palavra notícia tem origem do latim e significa: notoriedade, conhecimento, ideia e conceito. A notícia deve ser imparcial, ou seja, não pode haver opinião sobre ela e publicada praticamente em tempo real ao fato ocorrido. A notícia segue esta estrutura: ",
+      "corrected_text": "Uma característica da notícia é a rapidez para a publicação, portanto o título precisa mostrar ao leitor a importância do fato noticiado. A palavra notícia tem origem no latim e significa: notoriedade, conhecimento, ideia e conceito. A notícia deve ser imparcial, ou seja, não pode haver opinião sobre ela e publicada praticamente em tempo real ao fato ocorrido. A notícia segue esta estrutura: ",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 1156",
+      "error": "A lide responde às perguntas: Quem? Onde? O quê? Como? Quando? Por quê?",
+      "correction": "A lide responde às perguntas: Quem? Onde? O quê? Como? Quando? Por quê?",
+      "type": "acentuação",
+      "applied": false,
+      "reason": "Padrão não encontrado no texto"
+    },
+    {
+      "location": "Parágrafo 2623",
+      "error": "é comum que os verbos apareçam no modo imperativo",
+      "correction": "É comum que os verbos apareçam no modo imperativo",
+      "type": "acentuação",
+      "original_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. é comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "corrected_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. É comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 3755",
+      "error": "diferentes pontos de vista..",
+      "correction": "diferentes pontos de vista.",
+      "type": "pontuação",
+      "original_text": "Por que entender a reportagem é importante?\n• Ajuda você a se informar de verdade sobre o que acontece no mundo.\n• Ensina a olhar além do óbvio, considerando diferentes pontos de vista..\n• Desenvolve seu pensamento crítico e a capacidade de fazer boas perguntas.",
+      "corrected_text": "Por que entender a reportagem é importante?\n• Ajuda você a se informar de verdade sobre o que acontece no mundo.\n• Ensina a olhar além do óbvio, considerando diferentes pontos de vista.\n• Desenvolve seu pensamento crítico e a capacidade de fazer boas perguntas.",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 4688",
+      "error": "[Inserir 3 linha]",
+      "correction": "[Inserir 3 linhas]",
+      "type": "concordância",
+      "original_text": "[Inserir 3 linha]",
+      "corrected_text": "[Inserir 3 linhas]",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 4948",
+      "error": "acesso em 29 jun 2025",
+      "correction": "Acesso em: 29 jun. 2025",
+      "type": "ortografia/acentuação",
+      "original_text": "ALVES, Rubens. A pipoca. 29 ago. 1999, p. 61-64. Texto publicado originalmente no jornal Correio Popular. Encontrado em: https://clubedapipoca.com/milho-de-pipoca-rubem-alves/ acesso em 29 jun 2025",
+      "corrected_text": "ALVES, Rubens. A pipoca. 29 ago. 1999, p. 61-64. Texto publicado originalmente no jornal Correio Popular. Encontrado em: https://clubedapipoca.com/milho-de-pipoca-rubem-alves/ Acesso em: 29 jun. 2025",
+      "applied": true
+    }
+  ]
+}

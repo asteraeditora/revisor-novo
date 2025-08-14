@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "total_errors_found": 2,
+    "total_corrections_applied": 2,
+    "corrections_failed": 0,
+    "by_type": {
+      "acentuação": 1,
+      "ortografia": 1
+    }
+  },
+  "applied_corrections": [
+    {
+      "location": "Parágrafo 2623",
+      "error": "é comum que os verbos apareçam no modo imperativo",
+      "correction": "É comum que os verbos apareçam no modo imperativo",
+      "type": "acentuação",
+      "original_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. é comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "corrected_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. É comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 2683",
+      "error": "de corre do uso de reticências",
+      "correction": "decorre do uso de reticências",
+      "type": "ortografia",
+      "original_text": "(EF05LP04) Diferenciar, na leitura de textos, vírgula, ponto e vírgula, dois-pontos e reconhecer, na leitura de textos, o efeito de sentido que de corre do uso de reticências, aspas, parênteses. ",
+      "corrected_text": "(EF05LP04) Diferenciar, na leitura de textos, vírgula, ponto e vírgula, dois-pontos e reconhecer, na leitura de textos, o efeito de sentido que decorre do uso de reticências, aspas, parênteses. ",
+      "applied": true
+    }
+  ],
+  "all_corrections": [
+    {
+      "location": "Parágrafo 2623",
+      "error": "é comum que os verbos apareçam no modo imperativo",
+      "correction": "É comum que os verbos apareçam no modo imperativo",
+      "type": "acentuação",
+      "original_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. é comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "corrected_text": "Esses textos são escritos de forma direta e objetiva, usando geralmente uma linguagem simples para facilitar a compreensão. É comum que os verbos apareçam no modo imperativo, pois esse modo é usado para indicar ações e comandos, como: “misture”, “recorte”, “ligue”, “pule”, “coloque”.",
+      "applied": true
+    },
+    {
+      "location": "Parágrafo 2683",
+      "error": "de corre do uso de reticências",
+      "correction": "decorre do uso de reticências",
+      "type": "ortografia",
+      "original_text": "(EF05LP04) Diferenciar, na leitura de textos, vírgula, ponto e vírgula, dois-pontos e reconhecer, na leitura de textos, o efeito de sentido que de corre do uso de reticências, aspas, parênteses. ",
+      "corrected_text": "(EF05LP04) Diferenciar, na leitura de textos, vírgula, ponto e vírgula, dois-pontos e reconhecer, na leitura de textos, o efeito de sentido que decorre do uso de reticências, aspas, parênteses. ",
+      "applied": true
+    }
+  ]
+}
